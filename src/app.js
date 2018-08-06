@@ -1,9 +1,11 @@
 const InputView = require('./views/input_view.js');
+const ResultView = require('./views/result_view.js');
+const WordCounter = require('./models/word_counter.js');
 
 const formSubmitHandler = function(evt) {
   evt.preventDefault();
   const form = evt.target;
-  renderListItemFromForm(form);
+  renderResultFromForm(form);
   form.reset();
 };
 

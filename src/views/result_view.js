@@ -1,4 +1,4 @@
-const PubSub = require('../../helpers/pub_sub.js');
+const PubSub = require('../helpers/pub_sub.js');
 
 const ResultView = function () {
 
@@ -17,7 +17,7 @@ ResultView.prototype.updateView = function (result) {
     resultElement.textContent = `Word count: ${result}`
   }
   else {
-    resultElement.textContent = "No, it's not a prime number."
+      resultElement.textContent = `Word count: 0`
   }
 };
 
